@@ -1,11 +1,8 @@
-package pack;
-import junit.framework.Assert;
-import src.main.java.BankAccount;
 
-import org.junit.Before;
+import junit.framework.Assert;
+
 import org.junit.Test;
 
-@Category(IntegrationTest.class)
 public class TestBankAccount {
 
 	@Test
@@ -15,8 +12,8 @@ public class TestBankAccount {
 		Assert.assertEquals(5.0, amount);
 
 	}
-	
-	//test
+
+	// test
 
 	@Test
 	public void testDebitWithInSufficientFunds() {
