@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestBankAccount
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec <<< FAILURE! - in TestBankAccount
-testDebitWithInSufficientFunds(TestBankAccount)  Time elapsed: 0.014 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in TestBankAccount
+testDebitWithInSufficientFunds(TestBankAccount)  Time elapsed: 0.006 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<10.0> but was:<5.0>
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
 	at junit.framework.Assert.assertEquals(Assert.java:78)
 	at junit.framework.Assert.assertEquals(Assert.java:86)
-	at TestBankAccount.testDebitWithInSufficientFunds(TestBankAccount.java:23)
+	at TestBankAccount.testDebitWithInSufficientFunds(TestBankAccount.java:22)
 
