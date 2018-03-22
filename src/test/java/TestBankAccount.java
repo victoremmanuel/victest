@@ -14,7 +14,6 @@ public class TestBankAccount {
 
 	}
 
-	// test
 
 	@Test
 	public void testDebitWithInSufficientFunds() {
