@@ -9,7 +9,7 @@
 		<maven.compiler.source>7</maven.compiler.source>
 		<maven.compiler.target>7</maven.compiler.target>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -17,72 +17,34 @@
 			<version>4.11</version>
 		</dependency>
 	</dependencies>
- <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.4</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>2.4</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>2.1.2</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                    </archive>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                    </archive>
-                </configuration>
-            </plugin>
-		
 
-<plugin>
-  <groupId>org.codehaus.groovy.maven</groupId>
-  <artifactId>gmaven-plugin</artifactId>
-  <version>1.0-rc-3</version>
-  <extensions>true</extensions>
-  <executions>
-    <execution>
-      <goals>
-        <goal>testCompile</goal>
-      </goals>
-      <configuration>
-        <sources>
-          <fileset>
-            <directory>${pom.basedir}/src</directory>
-            <includes>
-              <include>**/*.groovy</include>
-            </includes>
-          </fileset>
-        </sources>
-      </configuration>
-    </execution>
-  </executions>
-</plugin>
-        </plugins>
-    </build>
+
+
+	<build>
+		<plugin>
+			<groupId>org.codehaus.groovy.maven</groupId>
+			<artifactId>gmaven-plugin</artifactId>
+			<version>1.0-rc-3</version>
+			<extensions>true</extensions>
+			<executions>
+				<execution>
+					<goals>
+						<goal>testCompile</goal>
+					</goals>
+					<configuration>
+						<sources>
+							<fileset>
+								<directory>${pom.basedir}/src</directory>
+								<includes>
+									<include>**/*.groovy</include>
+								</includes>
+							</fileset>
+						</sources>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+	</build>
 </project>
 
 
