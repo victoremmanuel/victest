@@ -1,5 +1,6 @@
 
 import junit.framework.Assert;
+import main.BankAccount;
 
 import org.junit.Test;
 
