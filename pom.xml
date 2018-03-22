@@ -21,32 +21,18 @@
 
 
 	<build>
-		<plugins>
-		<plugin>
-			<groupId>org.codehaus.groovy.maven</groupId>
-			<artifactId>gmaven-plugin</artifactId>
-			<version>1.0-rc-3</version>
-			<extensions>true</extensions>
-			<executions>
-				<execution>
-					<goals>
-						<goal>testCompile</goal>
-					</goals>
-					<configuration>
-						<sources>
-							<fileset>
-								<directory>${pom.basedir}/src</directory>
-								<includes>
-									<include>**/*.groovy</include>
-								</includes>
-							</fileset>
-						</sources>
-					</configuration>
-				</execution>
-			</executions>
-		</plugin>
-	</plugins>
-	</build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
 
 
