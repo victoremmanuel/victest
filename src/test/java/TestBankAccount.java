@@ -23,7 +23,7 @@ public class TestBankAccount {
 
 	}
 	
-	@Test
+	//@Test
 	public void checkBalance() {
 		BankAccount account = new BankAccount(10);
 		Assert.assertEquals(10.0, account.checkBalance());
