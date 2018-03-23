@@ -15,6 +15,7 @@ public class BankAccount {
 		balance -= amount;
 		return amount;
 	}
+	//check balance
 	public double checkBalance() {
 		
 		return balance;
